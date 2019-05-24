@@ -1,0 +1,27 @@
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STIFT" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <discriminator>
+            <key>path</key>
+            <defaultValue>defaultlog</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="fileAppender" class="ch.qos.logback.core.FileAppender">
+                <file>${path}.log</file>
+                <encoder>
+                    <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+                </encoder>
+            </appender>
+        </sift>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="STIFT"/>
+    </root>
+</configuration>

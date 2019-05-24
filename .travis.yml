@@ -1,0 +1,9 @@
+language: scala
+jdk:
+  - openjdk8
+scala:
+  - 2.11.8
+script:
+  - sbt compile
+  - sbt test
+  - sbt assembly
