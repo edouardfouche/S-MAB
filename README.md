@@ -13,7 +13,6 @@ information required to reproduce the experiments in the paper. For this reason,
 publication.
 
 This repository is released under the AGPLv3 license. Please see the [LICENSE.md](LICENSE.md) file.
-
 The data from the [Bioliq®](https://www.bioliq.de/english/) pyrolisis plant, which we use in the paper, is licensed under CC-BY-NC-SA-4.0. You can dowload it from here [here](https://www.dropbox.com/s/gyrb62ebtcmvy9h/Bioliq_S-MAB.zip).
 
 If you are using any of the code or data from this repository, please cite our paper.
@@ -80,7 +79,7 @@ sbt "run com.edouardfouche.experiments.BanditNonStaticAbrupt"  # ~ 16 hours, 220
 
 ### Real-World
 
-#### Pre-Computation
+#### Pre-computation
 
 We significantly speed up the experiments by pre-computing the pair-wise mutual information between every attributes
 of the real-world data. We provide the results of this pre-computation in this repository as `data/Bioliq_S-MAB_1wx20_MI_1000_100.csv` (so you can
@@ -98,7 +97,7 @@ To perform the pre-computation (the file `data/Bioliq_S-MAB_1wx20.csv` is requir
 sbt "run com.edouardfouche.experiments.BanditCache"  # ~ 5 min, 22MB data
 ```
 
-#### Real-World Experiments
+#### Real-world experiments
 
 Then, the following experiment evaluates Scaling Bandits in our real-world use case (Figure 5 and 6 top).
 
