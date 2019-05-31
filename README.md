@@ -13,9 +13,11 @@ information required to reproduce the experiments in the paper. For this reason,
 publication.
 
 This repository is released under the AGPLv3 license. Please see the [LICENSE.md](LICENSE.md) file.
-The data from the [Bioliq®](https://www.bioliq.de/english/) pyrolisis plant, which we use in the paper, is licensed under CC-BY-NC-SA-4.0. You can dowload it from here [here](https://www.dropbox.com/s/gyrb62ebtcmvy9h/Bioliq_S-MAB.zip).
+The data from the [Bioliq®](https://www.bioliq.de/english/) pyrolisis plant,
+which we use in the paper, is licensed under CC-BY-NC-SA-4.0.
+You can download it from [here](https://www.dropbox.com/s/gyrb62ebtcmvy9h/Bioliq_S-MAB.zip).
 
-If you are using any of the code or data from this repository, please cite our paper.
+If you are using the code or data from this repository, please cite our paper.
 
 ## Quick start
 
